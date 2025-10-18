@@ -1,0 +1,236 @@
+body {
+  margin: 30px;
+  font-family: Helvetica;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+}
+
+.rectangle {
+  width: 50px;
+  height: 7px;
+  background-color: #000;
+  border: 2px solid #000;
+  margin-bottom: 15px;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+}
+
+.code {
+  font-family: "Menlo", monospace;
+  line-height: 1.6;
+}
+
+.text {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.normal-text {
+  font-weight: normal;
+  color: gray;
+  font-size: 16px;
+}
+
+/* 頭像 */
+.profile-img {
+  float: right;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 0 20px 20px;
+}
+
+/* 社交图标 */
+.social-icon {
+  font-size: 20px; /* 统一设置为20px */
+  color: #333;
+  margin-right: 8px;
+  transition: all 0.3s;
+  display: inline-block;
+  vertical-align: middle; /* 添加垂直对齐 */
+}
+
+.social-icon[aria-label="GitHub"]:hover {
+  color: #6e5494;
+}
+
+.social-icon[aria-label="Instagram"]:hover {
+  color: #f56040;
+}
+
+.social-icon[aria-label="LinkedIn"]:hover {
+  color: #0a66c2;
+}
+
+.social-icon[aria-label="Location of HKUST"]:hover {
+  color: #0a66c2;
+}
+
+/* 时间戳布局 */
+.timeline-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.date {
+  color: gray;
+  white-space: nowrap;
+  margin-left: 15px;
+}
+
+/* 技能标签 */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tag {
+  background-color: rgb(234, 234, 234);
+  border-radius: 4px;
+  padding: 5px 10px;
+  font-family: "Menlo", monospace;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+/* 下载链接 */
+.download-link {
+  color: #333;
+  margin-left: 5px;
+}
+
+/* 手机端适配 */
+@media (max-width: 768px) {
+  body {
+    margin: 15px;
+    padding: 0 10px;
+  }
+
+  .title {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .subtitle {
+    font-size: 20px;
+  }
+
+  .profile-img {
+    width: 100px;
+    height: 100px;
+    float: none;
+    display: block;
+    margin: 0 auto 20px auto;
+  }
+
+  /* .code {
+      text-align: center;
+      display: block;
+  } */
+
+  .timeline-item {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 15px;
+  }
+
+  .date {
+    margin-left: 0;
+    margin-top: 5px;
+    align-self: flex-end;
+  }
+
+  .skills-container {
+    justify-content: center;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+}
+
+/* 新增: 深色模式樣式 */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode .rectangle {
+  background-color: #e0e0e0;
+  border: 2px solid #e0e0e0;
+}
+
+body.dark-mode .title,
+body.dark-mode .subtitle,
+body.dark-mode .text {
+  color: #e0e0e0;
+}
+
+body.dark-mode .subtitle {
+  border-bottom: 1px solid #333;
+}
+
+body.dark-mode .code {
+  color: #e0e0e0;
+}
+
+body.dark-mode .normal-text,
+body.dark-mode .date {
+  color: #a0a0a0;
+}
+
+body.dark-mode .social-icon {
+  color: #e0e0e0;
+}
+
+body.dark-mode .social-icon[aria-label="GitHub"]:hover {
+  color: #9e7cc1;
+}
+
+body.dark-mode .social-icon[aria-label="Instagram"]:hover {
+  color: #f78f7a;
+}
+
+body.dark-mode .social-icon[aria-label="LinkedIn"]:hover {
+  color: #4d9bf0;
+}
+
+body.dark-mode .social-icon[aria-label="Location of HKUST"]:hover {
+  color: #4d9bf0;
+}
+
+body.dark-mode .skill-tag {
+  background-color: #333;
+  color: #e0e0e0;
+}
+
+body.dark-mode .download-link {
+  color: #e0e0e0;
+}
+
+/* 手機端深色模式調整 */
+@media (max-width: 768px) {
+  body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+}
