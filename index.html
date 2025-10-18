@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yu-Chen (Lima) WU | Personal Web Page</title>
+    <title>Lima WU | Personal Web Page</title>
     <link href="./style.css" rel="stylesheet" />
     <link
       rel="stylesheet"
@@ -11,8 +11,20 @@
     />
   </head>
 
+  <div class="rectangle"></div>
+
   <body>
-    <div class="rectangle"></div>
+    <!-- 深色模式切換按鈕 -->
+    <button
+      id="theme-toggle"
+      class="social-icon"
+      aria-label="Toggle Dark Mode"
+      style="margin-left: 10px; background: none; border: none; cursor: pointer"
+    >
+      <i class="fa-solid fa-moon"></i>
+      <!-- 初始為月亮圖示，表示切到深色 -->
+    </button>
+
     <img src="selfie.jpeg" class="profile-img" alt="Profile Photo" />
 
     <div class="title">Yu-Chen (Lima) WU | 吳禹辰</div>
@@ -53,21 +65,15 @@
         <i class="fa-brands fa-square-instagram"></i>
       </a>
 
-      <a href="#" target="_blank" class="social-icon" aria-label="LinkedIn">
+      <a
+        href="https://www.linkedin.com/in/lima-wu-301578269/"
+        target="_blank"
+        class="social-icon"
+        aria-label="LinkedIn"
+      >
         <i class="fa-brands fa-linkedin"></i>
       </a>
     </div>
-
-    <!-- 深色模式切換按鈕 -->
-    <button
-      id="theme-toggle"
-      class="social-icon"
-      aria-label="Toggle Dark Mode"
-      style="margin-left: 10px; background: none; border: none; cursor: pointer"
-    >
-      <i class="fa-solid fa-moon"></i>
-      <!-- 初始為月亮圖示，表示切到深色 -->
-    </button>
 
     <div class="subtitle"><strong>Education</strong></div>
 
@@ -95,15 +101,66 @@
       GPA rank 1st in the class.
     </div>
 
+    <div class="subtitle"><strong>Industrial & Startup Experience</strong></div>
+
+    <!-- AI Fintech Corp. -->
+    <div class="timeline-item">
+      <span class="text">AI Fintech Corp.</span>
+      <span class="code date">Kaohsiung, Taiwan (Remote)</span>
+    </div>
+    <div class="timeline-item">
+      <span class="normal-text" style="padding-left: 15px"
+        >Data Scientist Intern (Incoming)</span
+      >
+      <span class="code date">Dec 2025 – Jan 2026</span>
+    </div>
+
+    <!-- Academia Sinica -->
+    <div class="timeline-item">
+      <span class="text">E2eeLab, Academia Sinica</span>
+      <span class="code date">Taipei, Taiwan</span>
+    </div>
+    <div class="timeline-item">
+      <span class="normal-text" style="padding-left: 15px"
+        >Research Assistant Intern, supervised by Dr. Lee, Gen-Cher
+        <a
+          target="_blank"
+          href="https://homepage.citi.sinica.edu.tw/pages/ziv/index_en.html"
+          ><i class="fa-solid fa-arrow-up-right-from-square"></i></a
+      ></span>
+      <span class="code date">Jul 2025 – Aug 2025</span>
+    </div>
+
+    <div class="code" style="padding-left: 15px; padding-top: 5px">
+      <ul style="margin-top: 0">
+        <li>
+          Developed a Q&A chatbot for general health questions using Java
+          (Maven) and validated via JUnit.
+        </li>
+        <li>
+          Built a Traditional Chinese medical corpus for RAG retrieval using
+          Selenium and requests; stored data in FAISS.
+        </li>
+        <li>
+          Integrated RAG with conversation history using LangGraph to enhance
+          contextual coherence.
+        </li>
+        <li>
+          Implemented hybrid retrieval (HyDE, BM25 + vector search, LLM
+          reranking) to reduce latency by 80%.
+        </li>
+      </ul>
+    </div>
+
     <div class="subtitle"><strong>Research Experience</strong></div>
     <div class="timeline-item">
       <span class="text"
         >Accelerating inference of LLMs on Resource-Constrained Devices</span
       >
-      <span class="code date">Sep. 2025 – Present</span>
+      <span class="code date">Sep 2025 – Present</span>
     </div>
     <div class="code" style="padding-left: 15px; padding-top: 5px">
-      Supervisor: Professor Xiaomin OUYANG
+      Supervisor: Prof. Xiaomin OUYANG
       <a target="_blank" href="https://xmouyang.github.io/"
         ><i class="fa-solid fa-arrow-up-right-from-square"></i
       ></a>
@@ -112,27 +169,25 @@
       <span class="text"
         >LLM-Assisted Multimodal Sensing on Mobile Devices</span
       >
-      <span class="code date">Feb. 2025 – July 2025</span>
+      <span class="code date">Feb 2025 – Jun 2025</span>
     </div>
     <div class="code" style="padding-left: 15px; padding-top: 5px">
-      Supervisor: Professor Xiaomin OUYANG
-      <a target="_blank" href="https://xmouyang.github.io/"
-        ><i class="fa-solid fa-arrow-up-right-from-square"></i
-      ></a>
+      Supervisor: Prof. Xiaomin OUYANG
+      <a target="_blank" href="https://xmouyang.github.io/">
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+      </a>
+      <br />
+      <ul style="margin-top: 5px">
+        <li>
+          Developed the <strong>MobiBox</strong> Android app for
+          smartphone-based activity analysis.
+        </li>
+        <li>
+          Resolved front-end debugging and mobile data collection issues,
+          improving system stability.
+        </li>
+      </ul>
     </div>
-
-    <div class="subtitle"><strong>Industrial & Startup Experience</strong></div>
-
-    <div class="timeline-item">
-      <span class="text">Data Scientist Intern</span>
-      <span class="code date">Dec. 2025 - Jan. 2026</span>
-    </div>
-
-    <div class="timeline-item">
-      <span class="text">Summer Intern</span>
-      <span class="code date">July 2025 - Aug. 2025</span>
-    </div>
-    <li></li>
 
     <div class="subtitle"><strong>Honors & Achievements</strong></div>
 
@@ -141,7 +196,7 @@
         >Semi-Finalist, Institute for Supply Management Hong Kong Student Case
         Competition</span
       >
-      <span class="code date">Mar. 2025</span>
+      <span class="code date">Mar 2025</span>
     </div>
 
     <div class="timeline-item">
@@ -220,38 +275,53 @@
       </span>
     </div>
 
-    <div class="subtitle"><strong>Positions</strong></div>
-
-    <div class="timeline-item">
-      <span class="text">I.T. Manager </span>
-      <span class="code date">Jun. 2024 – Jun. 2025</span>
-    </div>
-    <div class="code" style="padding-left: 15px; padding-bottom: 5px">
-      HKUSTSU Taiwanese Student Association
-    </div>
-
     <div class="subtitle"><strong>Skills</strong></div>
 
-    <div class="skills-container">
-      <span class="skill-tag">Python</span>
-      <span class="skill-tag">C++</span>
-      <span class="skill-tag">Java</span>
-      <span class="skill-tag">LaTeX</span>
-      <span class="skill-tag">Markdown</span>
-      <span class="skill-tag">Deep Learning</span>
-      <span class="skill-tag">PyTorch</span>
-      <span class="skill-tag">HTML</span>
-      <span class="skill-tag">CSS/SCSS</span>
+    <div class="code" style="padding-left: 15px; padding-bottom: 10px">
+      <strong>Programming Languages:</strong> C/C++, Python<br />
+      <strong>Frameworks & Tools:</strong> PyTorch, Bootstrap, Git, Docker<br />
+      <strong>Development:</strong> Web (HTML, SCSS), App (Android Studio)<br />
+      <strong>Design & Modeling Tools:</strong> LaTeX, Draw.io (UML), Microsoft
+      Office
+    </div>
+
+    <div class="subtitle">
+      <strong>Other Experience and Certificates</strong>
+    </div>
+
+    <div class="timeline-item">
+      <span class="text"
+        >Google Digital Talent Exploration Program (Google Cloud
+        Foundations)</span
+      >
+      <span class="code date">Aug 2025</span>
+    </div>
+    <div class="code" style="padding-left: 15px; padding-bottom: 5px">
+      <span class="normal-text"
+        >Completed Google Cloud Foundations training.</span
+      >
+    </div>
+
+    <div class="timeline-item">
+      <span class="text"
+        >I.T. Manager, HKUSTSU Taiwanese Student Association</span
+      >
+      <span class="code date">Jun 2024 – Jun 2025</span>
+    </div>
+    <div class="code" style="padding-left: 15px; padding-bottom: 5px">
+      <span class="normal-text"
+        >Managed TSA database, maintained internal systems, and supported
+        Taiwanese community events.</span
+      >
     </div>
 
     <div class="subtitle"><strong>Languages</strong></div>
 
-    <div class="skills-container">
-      <span class="skill-tag">Madarin - Native</span>
-      <span class="skill-tag">English - Fluent</span>
-      <span class="skill-tag">German - Elementary</span>
-      <span class="skill-tag">Japanese - Beginenr</span>
-      <span class="skill-tag">Cantonese - Beginenr</span>
+    <div class="code" style="padding-left: 15px; padding-bottom: 10px">
+      <strong>Madarin:</strong> Native<br />
+      <strong>English:</strong> Fluent <br />
+      <strong>Japanese:</strong> Beginner<br />
+      <strong>German:</strong> Beginner<br />
     </div>
     <br /><br />
 
@@ -261,11 +331,20 @@
       const body = document.body;
       const icon = toggleButton.querySelector("i");
 
-      // 檢查 localStorage 中的主題偏好
+      // 若 localStorage 尚未設定，預設為深色模式
+      if (!localStorage.getItem("theme")) {
+        localStorage.setItem("theme", "dark");
+      }
+
+      // 根據 localStorage 設定主題
       if (localStorage.getItem("theme") === "dark") {
         body.classList.add("dark-mode");
         icon.classList.remove("fa-moon");
         icon.classList.add("fa-sun");
+      } else {
+        body.classList.remove("dark-mode");
+        icon.classList.remove("fa-sun");
+        icon.classList.add("fa-moon");
       }
 
       // 切換主題

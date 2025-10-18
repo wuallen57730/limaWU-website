@@ -90,6 +90,13 @@ body {
   margin-bottom: 5px;
 }
 
+/* 專用於實習職稱的樣式 */
+.timeline-item .normal-text {
+  color: gray;
+  font-size: 16px;
+  font-weight: normal;
+}
+
 .date {
   color: gray;
   white-space: nowrap;
@@ -233,4 +240,31 @@ body.dark-mode .download-link {
     background-color: #121212;
     color: #e0e0e0;
   }
+}
+
+/* 深色模式切換按鈕位置與外觀 */
+#theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #333;
+  transition: color 0.3s;
+  z-index: 1000; /* 確保在最上層 */
+}
+
+#theme-toggle:hover {
+  color: #555;
+}
+
+/* 深色模式下的按鈕顏色 */
+body.dark-mode #theme-toggle {
+  color: #e0e0e0;
+}
+
+body.dark-mode #theme-toggle:hover {
+  color: #b0b0b0;
 }
