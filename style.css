@@ -49,11 +49,14 @@ body {
 /* 頭像 */
 .profile-img {
   float: right;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin: 0 0 20px 20px;
+  width: 220px;
+  max-width: 20%;
+  height: auto;
+  border-radius: 18px;
+  object-fit: contain;
+  background-color: #f5f5f5;
+  padding: 6px;
+  margin: 0 0 15px 20px;
 }
 
 /* 社交图标 */
@@ -142,8 +145,8 @@ body {
   }
 
   .profile-img {
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: auto;
     float: none;
     display: block;
     margin: 0 auto 20px auto;
