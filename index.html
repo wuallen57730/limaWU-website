@@ -3,17 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Personal webpage of Lima Wu, a Computer Science student at HKUST."
+    />
     <title>Lima WU | Personal Web Page</title>
     <link href="./style.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <!-- KaTeX for LaTeX rendering -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+      onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}]});"
+    ></script>
   </head>
 
-  <div class="rectangle"></div>
-
   <body>
+    <div class="rectangle"></div>
     <!-- 側邊導航欄 -->
     <aside class="sidebar-nav">
       <nav class="nav-links">
@@ -39,10 +56,10 @@
       <!-- 初始為月亮圖示，表示切到深色 -->
     </button>
 
-    <img src="selfie1.jpg" class="profile-img" alt="Profile" />
+    <img src="selfie1.jpg" class="profile-img" alt="Portrait of Lima Wu" />
 
-    <div class="title">YU-CHEN (Lima) WU | 吳禹辰</div>
-    <div class="code contact-info">BEng of Computer Science, HKUST '27</div>
+    <h1 class="title">YU-CHEN (Lima) WU | 吳禹辰</h1>
+    <div class="code contact-info">BEng in Computer Science, HKUST '27</div>
     <div class="code contact-info">
       <a
         class="social-icon"
@@ -89,7 +106,7 @@
       </a>
     </div>
 
-    <div class="subtitle" id="education"><strong>Education</strong></div>
+    <h2 class="subtitle" id="education"><strong>Education</strong></h2>
 
     <div class="timeline-item">
       <span class="text"
@@ -98,7 +115,7 @@
       <span class="code date">Sep 2023 - Jun 2027 (Pursuing)</span>
     </div>
     <div class="code" style="padding-left: 15px; padding-bottom: 5px">
-      BEng of Computer Science, with an Extended Major in Artificial
+      BEng in Computer Science, with an Extended Major in Artificial
       Intelligence and a Minor in Mathematics
     </div>
 
@@ -132,16 +149,18 @@
       </ul>
     </div>
 
-    <div class="subtitle" id="experience">
+    <h2 class="subtitle" id="experience">
       <strong>Industrial Experience</strong>
-    </div>
+    </h2>
     <div class="timeline-item">
       <span class="text"
         >AI Fintech Corp.
         <a target="_blank" href="https://aifinsys.com/"
-          ><i class="fa-solid fa-arrow-up-right-from-square"></i></a
-      ></span>
-      <span class="code date">Dec 2025 - Jan 2026</span>
+          ><i class="fa-solid fa-arrow-up-right-from-square"></i
+        ></a>
+        (incoming)</span
+      >
+      <span class="code date">Jan 2026 - Feb 2026</span>
     </div>
     <div class="timeline-item">
       <span class="normal-text" style="padding-left: 15px"
@@ -150,23 +169,26 @@
       <span class="code date">Remote</span>
     </div>
 
-    <div class="code" style="padding-left: 15px; padding-top: 5px">
+    <!-- <div class="code" style="padding-left: 15px; padding-top: 5px">
       <ul style="margin-top: 0">
         <li>
           Assisted in developing deep learning models, AI Agents, and climate
           risk prediction systems.
         </li>
-        <li>Built and maintained cloud service platforms (GCP / AWS).</li>
         <li>
-          Handled large datasets for model training and optimization using SQL /
-          NoSQL.
+          Built and maintained cloud service platforms (<u>GCP</u> /
+          <u>AWS</u>).
+        </li>
+        <li>
+          Handled large datasets for model training and optimization using
+          <u>SQL</u> / <u>NoSQL</u>.
         </li>
         <li>
           Contributed to the development of climate finance models and risk
           calculation tools.
         </li>
       </ul>
-    </div>
+    </div> -->
 
     <div class="timeline-item">
       <span class="text"
@@ -185,22 +207,18 @@
 
     <div class="code" style="padding-left: 15px; padding-top: 5px">
       <ul style="margin-top: 0">
-        <li>Designing and implementing Web Apps using React & Next.js</li>
         <li>
-          Architecting, implementing, and deploying native mobile applications
-          on Android and iOS platforms
-        </li>
-        <li>Integrating third-party services</li>
-        <li>
-          Configuring backend APIs using AWS (Lambda & DynamoDB structure)
+          Refactored <u>n8n</u> automation pipelines for the internal system, by
+          implementing data processing logic, reducing execution time and token
+          consumption by over <strong>88%</strong>.
         </li>
         <li>
-          Designing, developing, testing, implementing, enhancing, and
-          maintaining databases
+          Designing and implementing a Web App using <u>React</u> &
+          <u>Next.js</u>.
         </li>
-        <li>Performing frontend and integration testing</li>
         <li>
-          Working closely with UI/UX, product, and backend engineering teams.
+          Designing and implementing the front-end of a Mobile Device App using
+          <u>React Native</u>.
         </li>
       </ul>
     </div>
@@ -223,25 +241,26 @@
     <div class="code" style="padding-left: 15px; padding-top: 5px">
       <ul style="margin-top: 0">
         <li>
-          Developed a robust <strong>Java (Maven)</strong> health Q&A chatbot
-          with response format handling and validation through
-          <strong>JUnit</strong> tests.
+          Developed a robust <u><strong>Java (Maven)</strong></u> health Q&A
+          chatbot with response format handling and validation through
+          <u><strong>JUnit</strong></u> tests.
         </li>
         <li>
           Built a Traditional Chinese medical education corpus by crawling over
-          4,000 webpages across six sites via <strong>Requests</strong> and
-          <strong>Selenium</strong>, organizing data into
-          <strong>FAISS</strong> for efficient RAG retrieval.
+          <strong>4,000</strong> webpages across six sites via
+          <u><strong>Requests</strong></u> and <u><strong>Selenium</strong></u
+          >, organizing data into <u><strong>FAISS</strong></u> for efficient
+          RAG retrieval.
         </li>
         <li>
           Integrated RAG and conversation history memory using
-          <strong>LangGraph</strong> to boost contextual awareness and
+          <u><strong>LangGraph</strong></u> to boost contextual awareness and
           coherence.
         </li>
         <li>
-          Optimized the RAG pipeline with HyDE, BM25 + vector hybrid search, LLM
-          reranking, and RAGAs-based evaluation, reducing response time by
-          <strong>80%</strong>.
+          Optimized the RAG pipeline with <u>HyDE</u>, <u>BM25</u> + vector
+          hybrid search, LLM reranking, and <u>RAGAs</u>-based evaluation,
+          reducing response time by <strong>80%</strong>.
         </li>
       </ul>
     </div>
@@ -250,9 +269,9 @@
       <strong>Publication</strong>
     </div> -->
 
-    <div class="subtitle" id="research">
+    <h2 class="subtitle" id="research">
       <strong>Research Experience</strong>
-    </div>
+    </h2>
     <div class="timeline-item">
       <span class="text"
         >Accelerating inference of LLMs on Resource-Constrained Devices</span
@@ -310,9 +329,9 @@
       </ul>
     </div>
 
-    <div class="subtitle" id="awards">
+    <h2 class="subtitle" id="awards">
       <strong>Honors & Awards</strong>
-    </div>
+    </h2>
     <div class="timeline-item">
       <span class="text">
         3rd Prize, HKUST Guangzhou One Million Dollar Entrepreneurship
@@ -330,7 +349,11 @@
     <div class="code" style="padding-left: 15px; padding-bottom: 5px">
       <ul style="margin-top: 0">
         <li>
-          Ranked <strong>4th</strong> in the finals among the top 15 teams
+          Participated using the solution proposal from AI Fintech Corp.
+          <a target="_blank" href="https://aifinsys.com/">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+          and ranked <strong>4th</strong> in the finals among the top 15 teams
           shortlisted from over 100 teams, securing
           <strong>3rd Prize</strong> in Undergraduate Project Special Award.
         </li>
@@ -353,7 +376,7 @@
       </ul>
     </div>
 
-    <div class="subtitle" id="skills"><strong>Skills</strong></div>
+    <h2 class="subtitle" id="skills"><strong>Skills</strong></h2>
 
     <div class="code" style="padding-left: 15px; padding-bottom: 10px">
       <h3 style="margin-bottom: 0px">Programming Languages</h3>
@@ -364,6 +387,7 @@
       </div>
       <h3 style="margin-bottom: 0px">Frameworks & Libraries</h3>
       <div class="skills-container">
+        <!-- <span class="skill-tag">PyTorch</span> -->
         <span class="skill-tag">React</span>
         <span class="skill-tag">Next.js</span>
         <span class="skill-tag">Bootstrap</span>
@@ -372,14 +396,14 @@
       </div>
       <h3 style="margin-bottom: 0px">Cloud & Infrastructure</h3>
       <div class="skills-container">
-        <span class="skill-tag">AWS (Lambda, DynamoDB)</span>
-        <span class="skill-tag">GCP</span>
+        <!-- <span class="skill-tag">AWS (Lambda, DynamoDB)</span> -->
+        <span class="skill-tag">Google Cloud Platform</span>
         <span class="skill-tag">Docker</span>
       </div>
       <h3 style="margin-bottom: 0px">Development</h3>
       <div class="skills-container">
-        <span class="skill-tag">Web (HTML, CSS/SCSS)</span>
-        <span class="skill-tag">Mobile (Android Native)</span>
+        <span class="skill-tag">Web (HTML, CSS)</span>
+        <span class="skill-tag">Mobile (React Native)</span>
       </div>
 
       <h3 style="margin-bottom: 0px">Design & Modeling</h3>
@@ -397,9 +421,9 @@
       </div>
     </div>
 
-    <div class="subtitle" id="courses">
+    <h2 class="subtitle" id="courses">
       <strong>CS-Related Coursework</strong>
-    </div>
+    </h2>
 
     <div class="course-category">Artificial Intelligence</div>
     <div class="course-list">
@@ -418,6 +442,7 @@
           ><strong>B+</strong></span
         >
       </div>
+
       <!-- <div
         style="
           display: flex;
@@ -430,7 +455,7 @@
           <span class="code"> - Fundamentals of Artificial Intelligence</span>
         </span>
         <span class="code" style="min-width: 90px; display: inline-block"
-          ><strong>Unenrolled</strong></span
+          ><strong>Enrolling</strong></span
         >
       </div>
       <div
@@ -445,7 +470,7 @@
           <span class="code"> - Machine Learning</span>
         </span>
         <span class="code" style="min-width: 90px; display: inline-block"
-          ><strong>Unenrolled</strong></span
+          ><strong>Enrolling</strong></span
         >
       </div>
       <div
@@ -460,7 +485,7 @@
           <span class="code"> - Deep Learning in Computer Vision</span>
         </span>
         <span class="code" style="min-width: 90px; display: inline-block"
-          ><strong>Unenrolled</strong></span
+          ><strong>Enrolling</strong></span
         >
       </div> -->
       <div
@@ -482,7 +507,7 @@
           </span>
         </span>
         <span class="code" style="min-width: 90px; display: inline-block"
-          ><strong>Enrolling</strong></span
+          ><strong>B</strong></span
         >
       </div>
     </div>
@@ -745,7 +770,7 @@
           <span class="code"> - Computer and Communication Networks</span>
         </span>
         <span class="code" style="min-width: 90px; display: inline-block"
-          ><strong>Unenrolled</strong></span
+          ><strong>Enrolling</strong></span
         >
       </div> -->
     </div>
@@ -768,13 +793,34 @@
     </div>
     <div style="margin-top: 5px; font-size: 0.85em; color: #666">
       Note: HKUST Grade Distribution Guidelines — A range: 10-25% (usually
-      15-20%), B range: 25-40%, C range: 25-40%
+      15-20%), B range: 25-40%, C range: 25-40%. <br />
     </div>
 
     <div class="subtitle" id="projects"><strong>Projects</strong></div>
     <div class="timeline-item">
       <span class="text">
-        Argos (8th Cathay Hackathon / Theme: Cathay Cargo)
+        FedWIT MARL
+        <a target="_blank" href="https://github.com/wuallen57730/FedWIT-MARL"
+          ><i class="fa-solid fa-arrow-up-right-from-square"></i
+        ></a>
+      </span>
+      <span class="code date">Dec 2025 – Jan 2026</span>
+    </div>
+    <div class="code" style="padding-left: 15px; padding-top: 5px">
+      <span class="normal-text">
+        Extended FedWeIT (Federated Weighted Inter-client Transfer) to
+        Multi-Agent Reinforcement Learning by implementing decomposed layers $W
+        = B + A \odot M$ with mask-based parameter isolation, attention-weighted
+        knowledge transfer $\alpha = \text{softmax}(\cos(M_i, M_j) / \tau)$, and
+        sparse regularization in an IPPO framework, demonstrating effective
+        mitigation of catastrophic forgetting (FR: <strong>-5.69%</strong> vs
+        naive <strong>+4.73%</strong>) and positive backward transfer
+        (<strong>+2.61</strong>) across heterogeneous task sequences.
+      </span>
+    </div>
+    <div class="timeline-item">
+      <span class="text">
+        Argos (8th Cathay Hackathon)
         <a target="_blank" href="https://github.com/wuallen57730/jetsetgo-argos"
           ><i class="fa-solid fa-arrow-up-right-from-square"></i
         ></a>
@@ -863,40 +909,6 @@
 
     <!-- 新增: JavaScript 腳本 -->
     <script src="cga.js"></script>
-    <script>
-      const toggleButton = document.getElementById("theme-toggle");
-      const body = document.body;
-      const icon = toggleButton.querySelector("i");
-
-      // 若 localStorage 尚未設定，預設為深色模式
-      if (!localStorage.getItem("theme")) {
-        localStorage.setItem("theme", "dark");
-      }
-
-      // 根據 localStorage 設定主題
-      if (localStorage.getItem("theme") === "dark") {
-        body.classList.add("dark-mode");
-        icon.classList.remove("fa-moon");
-        icon.classList.add("fa-sun");
-      } else {
-        body.classList.remove("dark-mode");
-        icon.classList.remove("fa-sun");
-        icon.classList.add("fa-moon");
-      }
-
-      // 切換主題
-      toggleButton.addEventListener("click", () => {
-        body.classList.toggle("dark-mode");
-        if (body.classList.contains("dark-mode")) {
-          localStorage.setItem("theme", "dark");
-          icon.classList.remove("fa-moon");
-          icon.classList.add("fa-sun"); // 切到太陽，表示回淺色
-        } else {
-          localStorage.setItem("theme", "light");
-          icon.classList.remove("fa-sun");
-          icon.classList.add("fa-moon"); // 切回月亮，表示切到深色
-        }
-      });
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>

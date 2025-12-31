@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #1c444c;
+  --primary-color: #000000;
 }
 
 html {
@@ -68,6 +68,7 @@ body {
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 8px;
+  margin-top: 0;
 }
 
 .subtitle {
@@ -91,7 +92,7 @@ body {
 
 .normal-text {
   font-weight: normal;
-  color: gray;
+  color: #000000;
   font-size: 16px;
 }
 
@@ -144,13 +145,13 @@ body {
 
 /* 專用於實習職稱的樣式 */
 .timeline-item .normal-text {
-  color: gray;
+  color: #000000;
   font-size: 16px;
   font-weight: normal;
 }
 
 .date {
-  color: gray;
+  color: #000000;
   white-space: nowrap;
   margin-left: 15px;
 }
