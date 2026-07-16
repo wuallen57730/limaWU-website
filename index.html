@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -25,7 +25,14 @@
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
-      onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}]});"
+      onload="
+        renderMathInElement(document.body, {
+          delimiters: [
+            { left: '$$', right: '$$', display: true },
+            { left: '$', right: '$', display: false },
+          ],
+        })
+      "
     ></script>
   </head>
 
@@ -152,22 +159,6 @@
     <h2 class="subtitle" id="experience">
       <strong>Industrial & Startup Experience</strong>
     </h2>
-    <div class="timeline-item">
-      <span class="text"
-        >AI Fintech Corp.
-        <a target="_blank" href="https://aifinsys.com/"
-          ><i class="fa-solid fa-arrow-up-right-from-square"></i
-        ></a>
-        (Incoming)</span
-      >
-      <span class="code date">Jan 2026 - Feb 2026</span>
-    </div>
-    <div class="timeline-item">
-      <span class="normal-text" style="padding-left: 15px"
-        >Data Analyst Intern, Part-time, Winter Intern</span
-      >
-      <span class="code date">Remote</span>
-    </div>
 
     <!-- <div class="code" style="padding-left: 15px; padding-top: 5px">
       <ul style="margin-top: 0">
@@ -416,7 +407,8 @@
         <span class="skill-tag"><strong>Mandarin:</strong> Native</span>
         <span class="skill-tag"><strong>English:</strong> Fluent</span>
         <!-- <span class="skill-tag"><strong>German:</strong> A1</span> -->
-        <!-- <span class="skill-tag"><strong>Japanese:</strong> N5</span> -->
+        <span class="skill-tag"><strong>Japanese:</strong>JLPT N4</span>
+        <span class="skill-tag"><strong>Korean:</strong> TOPIK Level 1</span>
       </div>
     </div>
 
@@ -441,22 +433,6 @@
           ><strong>B+</strong></span
         >
       </div>
-
-      <!-- <div
-        style="
-          display: flex;
-          margin-bottom: 5px;
-          justify-content: space-between;
-        "
-      >
-        <span>
-          <span class="text">COMP 3211</span>
-          <span class="code"> - Fundamentals of Artificial Intelligence</span>
-        </span>
-        <span class="code" style="min-width: 90px; display: inline-block"
-          ><strong>Enrolling</strong></span
-        >
-      </div>
       <div
         style="
           display: flex;
@@ -469,7 +445,24 @@
           <span class="code"> - Machine Learning</span>
         </span>
         <span class="code" style="min-width: 90px; display: inline-block"
-          ><strong>Enrolling</strong></span
+          ><strong>B</strong></span
+        >
+      </div>
+      <div
+        style="
+          display: flex;
+          margin-bottom: 5px;
+          justify-content: space-between;
+        "
+      >
+        <span>
+          <span class="text">COMP 4221</span>
+          <span class="code">
+            - Introduction to Natural Language Processing</span
+          >
+        </span>
+        <span class="code" style="min-width: 90px; display: inline-block"
+          ><strong>B+</strong></span
         >
       </div>
       <div
@@ -484,9 +477,24 @@
           <span class="code"> - Deep Learning in Computer Vision</span>
         </span>
         <span class="code" style="min-width: 90px; display: inline-block"
-          ><strong>Enrolling</strong></span
+          ><strong>A+</strong></span
         >
-      </div> -->
+      </div>
+      <div
+        style="
+          display: flex;
+          margin-bottom: 5px;
+          justify-content: space-between;
+        "
+      >
+        <span>
+          <span class="text">COMP 4901D</span>
+          <span class="code"> - Embedded AI Systems</span>
+        </span>
+        <span class="code" style="min-width: 90px; display: inline-block"
+          ><strong>B+</strong></span
+        >
+      </div>
       <div
         style="
           display: flex;
@@ -772,7 +780,40 @@
           ><strong>Enrolling</strong></span
         >
       </div> -->
-    </div>
+      <!-- <div
+        style="
+          display: flex;
+          margin-bottom: 5px;
+          justify-content: space-between;
+        "
+      >
+        <span>
+          <span class="text">ELEC 4350</span>
+          <span class="code"> - AI Processor Architecture </span>
+        </span>
+        <span class="code" style="min-width: 90px; display: inline-block">
+          <strong>Audit</strong>
+        </span>
+      </div> -->
+      <!-- <div
+        style="
+          display: flex;
+          margin-bottom: 5px;
+          justify-content: space-between;
+        "
+      >
+        <span>
+          <span class="text">ELEC 5140</span>
+          <span class="code">
+            - Advanced Computer Architecture (PG Course)</span
+          >
+        </span>
+        <span class="code" style="min-width: 90px; display: inline-block"
+          ><strong>Enrolling</strong></span
+        >
+      </div>
+    --></div>
+
     <div
       style="
         display: flex;
@@ -784,7 +825,7 @@
     >
       <span>
         <span class="text"><strong>CS-related CGA</strong></span>
-        <span class="code"> (As of Fall 2025)</span>
+        <span class="code"> (As of Spring 2025/2026)</span>
       </span>
       <span class="code" style="min-width: 90px; display: inline-block"
         ><strong id="cga-value">Calculating...</strong></span
@@ -795,29 +836,108 @@
       15-20%), B range: 25-40%, C range: 25-40%. <br />
     </div>
 
+    <div class="course-category">Self-taught Courses</div>
+    <div class="course-list">
+      <div
+        style="
+          display: flex;
+          margin-bottom: 5px;
+          justify-content: space-between;
+        "
+      >
+        <span>
+          <span class="text">MIT 6.5940</span>
+          <span class="code">
+            - TinyML and Efficient Deep Learning Computing
+            <a
+              target="_blank"
+              href="https://hanlab.mit.edu/courses/2024-fall-65940"
+              ><i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </span>
+        </span>
+        <span class="code" style="min-width: 90px; display: inline-block">
+          <a
+            href="https://github.com/wuallen57730/MIT-6.5940-TinyML-Fall-24"
+            target="_blank"
+            ><strong>Lab & Assignment Implementation</strong></a
+          >
+        </span>
+      </div>
+      <div
+        style="
+          display: flex;
+          margin-bottom: 5px;
+          justify-content: space-between;
+        "
+      >
+        <span>
+          <span class="text">Stanford CS231n</span>
+          <span class="code">
+            - Deep Learning in Computer Vision
+            <a target="_blank" href="https://cs231n.stanford.edu/"
+              ><i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </span>
+        </span>
+        <span class="code" style="min-width: 90px; display: inline-block">
+          <a href="https://github.com/wuallen57730" target="_blank"
+            ><strong>Lab & Assignment Implementation</strong></a
+          >
+        </span>
+      </div>
+      <div
+        style="
+          display: flex;
+          margin-bottom: 5px;
+          justify-content: space-between;
+        "
+      >
+        <span>
+          <span class="text">Stanford CS149</span>
+          <span class="code">
+            - Parallel Computing
+            <a
+              target="_blank"
+              href="https://gfxcourses.stanford.edu/cs149/fall25"
+              ><i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </span>
+        </span>
+        <span class="code" style="min-width: 90px; display: inline-block">
+          <a href="https://github.com/wuallen57730/cs149-PA3" target="_blank"
+            ><strong>Lab & Assignment Implementation</strong></a
+          >
+        </span>
+      </div>
+      <div
+        style="
+          display: flex;
+          margin-bottom: 5px;
+          justify-content: space-between;
+        "
+      >
+        <span>
+          <span class="text">UCSD CSE 234</span>
+          <span class="code">
+            - Data Systems for Machine Learning
+            <a target="_blank" href="https://haoailab.com/cse234-w25/"
+              ><i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </span>
+        </span>
+        <span class="code" style="min-width: 90px; display: inline-block">
+          <a
+            href="https://github.com/wuallen57730/MIT-6.5940-TinyML-Fall-24"
+            target="_blank"
+            ><strong>Lab & Assignment Implementation</strong></a
+          >
+        </span>
+      </div>
+    </div>
+
     <div class="subtitle" id="projects"><strong>Projects</strong></div>
-    <div class="timeline-item">
-      <span class="text">
-        FedWIT MARL
-        <a target="_blank" href="https://github.com/wuallen57730/FedWIT-MARL"
-          ><i class="fa-solid fa-arrow-up-right-from-square"></i
-        ></a>
-      </span>
-      <span class="code date">Dec 2025 – Jan 2026</span>
-    </div>
-    <div class="code" style="padding-left: 15px; padding-top: 5px">
-      <span class="normal-text">
-        Extended FedWeIT (Federated Weighted Inter-client Transfer) to
-        Multi-Agent Reinforcement Learning by implementing decomposed layers $W
-        = B + A \odot M$ with mask-based parameter isolation, attention-weighted
-        knowledge transfer $\alpha = \text{softmax}(\cos(M_i, M_j) / \tau)$, and
-        sparse regularization in an IPPO framework, demonstrating effective
-        mitigation of catastrophic forgetting (FR:
-        <strong>-5.69%</strong> vs naive <strong>+4.73%</strong>) and positive
-        backward transfer (<strong>+2.61</strong>) across heterogeneous task
-        sequences.
-      </span>
-    </div>
+
     <div class="timeline-item">
       <span class="text">
         Argos (8th Cathay Hackathon)
